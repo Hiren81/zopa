@@ -41,6 +41,9 @@ public class User {
     private String password;
 
     public User() {
+
+        // using faker api to Randamize fake data
+
         faker = new Faker(new Locale("en-GB"));
         helpers = new Helpers();
         setUserEmail();
@@ -95,6 +98,8 @@ public class User {
     }
 
     private void setUserPostCode() {
+
+        // Using post code checker Api to validate post code
         postCode = given()
                 .when()
                 .get("http://api.postcodes.io/random/postcodes")

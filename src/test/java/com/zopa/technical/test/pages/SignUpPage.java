@@ -56,6 +56,7 @@ public class SignUpPage extends DriverManager {
     private WebElement passwordTxtBox;
 
     // This locator will handle all the radio button on the form
+
     @FindBy(css = ".radiocheck>label")
     private List<WebElement> genricRadioBtn;
 

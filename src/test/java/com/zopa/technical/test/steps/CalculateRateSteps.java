@@ -45,6 +45,8 @@ public class CalculateRateSteps {
     }
 
     @Given("^I set up mock User data for application$")
+
+    // using json
     public void mockUserData() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         String jsonInString = mapper.writeValueAsString(user);
